@@ -58,7 +58,13 @@ body::-webkit-scrollbar-track {
     background-color: var(--bg-color);
     position: relative;
 }
-
+.profile-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top; /* 🔑 CLAVE */
+}
 .logo img {
     width: 120px;
     height: auto;
@@ -201,7 +207,7 @@ body::-webkit-scrollbar-track {
     aspect-ratio: 1/1 !important;  /* asegura que sea 1:1 */
     border-radius: 50% !important; /* círculo perfecto */
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
     display: block;
 }
 .home__page {
